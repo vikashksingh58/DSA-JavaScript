@@ -51,7 +51,7 @@ a = b;
 b = temp;
 // a = 10, b = 5
 
-// Method 2: Array destructuring (modern, clean)
+// Method 2: Array destructuring
 [a, b] = [b, a];
 
 // Method 3: Arithmetic (works only with numbers)
