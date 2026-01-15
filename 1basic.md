@@ -8,6 +8,7 @@
 ### Understanding Hoisting
 
 Variables declared with `var` exhibit hoisting behavior, meaning they can be accessed before their declaration in the code. However, they are initialized with `undefined`.
+### Hoisting = JavaScript moves declarations to the top of the file before running code.
 
 ```javascript
 console.log(x); // undefined (no error)
