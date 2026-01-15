@@ -2,7 +2,8 @@
 
 # Type Coercion
 This is when JavaScript automatically converts one data type to another. It happens implicitly during operations:
-javascript// String coercion
+```
+// String coercion
 console.log("5" + 3);        // "53" (number 3 becomes string)
 console.log("5" - 3);        // 2 (string "5" becomes number)
 
@@ -14,9 +15,12 @@ console.log("" == false);    // true
 // Truthy/Falsy
 if ("hello") { }  // strings are truthy
 if (0) { }        // 0 is falsy
+```
 # Type Casting
 This is when you explicitly convert one type to another:
-javascript// To Number
+javascript
+```
+// To Number
 let str = "123";
 let num1 = Number(str);      // 123
 let num2 = parseInt(str);    // 123
@@ -33,9 +37,13 @@ let str3 = "" + num;         // "123"
 let bool1 = Boolean(1);      // true
 let bool2 = Boolean(0);      // false
 let bool3 = !!"hello";       // true (double negation)
+```
+
 # Swapping
 Several techniques to swap two variables:
-javascriptlet a = 5, b = 10;
+
+```
+let a = 5, b = 10;
 
 // Method 1: Using temporary variable (most readable)
 let temp = a;
@@ -55,3 +63,4 @@ a = a - b;  // a = 10
 a = a ^ b;
 b = a ^ b;
 a = a ^ b;
+```
