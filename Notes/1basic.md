@@ -28,14 +28,6 @@ let y = 20;
 - **ReferenceError** is an error thrown when trying to access a variable that hasn't been declared yet
 - **Best Practice:** Always use `let` (or `const`) for safer, more predictable code behavior
 
-### Practical Example
-
-```javascript
-let a = 10;
-let b = 20;
-console.log(a + b); // 30
-```
-
 **Note:** While semicolons are recommended for cleaner code, JavaScript can run without them due to automatic semicolon insertion.
 
 ---
@@ -93,7 +85,8 @@ console.log(`sum of 10 and 20 is ${10 + 20}`);
 **The + operator:** Performs concatenation if ANY operand is a string
 
 ```javascript
-"10" + 1 = "101"  // string concatenation
+"10" + 1 = "101"   // string concatenation
+10 + "1" = "101"   // string concatenation
 ```
 
 **The -, *, / operators:** Convert strings to numbers automatically
@@ -129,7 +122,7 @@ let str3 = "" + num;         // "123"
 
 ### Handling User Input with prompt()
 
-**⚠️ Critical:** Input from `prompt()` is ALWAYS a string, regardless of what the user types.
+** Critical:** Input from `prompt()` is ALWAYS a string, regardless of what the user types.
 
 ```javascript
 let age = prompt("What is your age?");
@@ -227,10 +220,17 @@ let a = 10, b = 20;
 
 #### Division Behavior
 
-**Important:** JavaScript always returns floating-point results for division, even with integers:
+**Important:** JavaScript always returns floating-point results for division, even with integers, if not fully divisible:
 
 ```javascript
+13 / 5 
+// Dividend: 13
+// Divisor: 5
+// Quotient: 2
+// Remainder: 3
+
 7 / 2 = 3.5  // not 3
+6 / 3 = 2
 ```
 
 To get integer division (floor division), use `Math.floor()`:
@@ -284,7 +284,7 @@ num = Math.floor(num / 100);    // Removes last 2 digits
 
 #### Equality: == vs ===
 
-**⚠️ Critical Difference:** Always use `===` (strict equality) unless you have a specific reason to use `==`
+**Critical Difference:** Always use `===` (strict equality) unless you have a specific reason to use `==`
 
 ```javascript
 // Loose equality (==) - performs type coercion
@@ -553,12 +553,6 @@ console.log(`Circumference: ${circumference.toFixed(2)}`);
 
 ---
 
-## Remember
-
-**These fundamentals form the foundation for all DSA problems in JavaScript. Master them well!**
-
----
-
 ### Additional Tips for DSA Success
 
 1. **Practice type conversion** - Many bugs come from mixing strings and numbers
@@ -579,5 +573,3 @@ console.log(`Circumference: ${circumference.toFixed(2)}`);
 - Practice converting between different number bases
 
 ---
-
-**Happy Coding! 🚀**
